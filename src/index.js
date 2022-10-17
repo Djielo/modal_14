@@ -1,7 +1,4 @@
 import React from "react";
-import image from "./assets/image.png";
-import { useSelector, useDispatch } from "react-redux";
-import { setModalMessage } from "../redux/features/employeeSlice";
 import styled from "style-components";
 
 const modalContainer = styled.div`
@@ -62,12 +59,12 @@ const modalText = styled.p`
   text-align: center;
 `;
 
-export const ModalEmployeeCreated = () => {
-  const dispatch = useDispatch();
-  const message = useSelector((state) => state.employee.ModalMessage);
+export const ModalEmployeeCreated = ({image, message}) => {
+
+  let msg = message
 
   function hide() {
-    dispatch(setModalMessage(""));
+    msg = ""
   }
 
   return (
@@ -77,7 +74,7 @@ export const ModalEmployeeCreated = () => {
         <div className={modal}>
           <button className={modalClose}>X</button>
           <img className={modalImage} src={image} alt="Employee Created" />
-          <p className={modalText}>{message}</p>
+          <p className={modalText}>{msg}</p>
         </div>
       </div>
     </>
