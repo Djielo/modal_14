@@ -20,4 +20,4 @@ const ModalEmployeeCreated = ({ image, message }) => {
   );
 };
 
-export { ModalEmployeeCreated };
+export default ModalEmployeeCreated;

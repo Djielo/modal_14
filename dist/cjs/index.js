@@ -1,7 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 require('index.css');
 
 function getDefaultExportFromCjs (x) {
@@ -2831,5 +2829,5 @@ var ModalEmployeeCreated = function ModalEmployeeCreated(_ref) {
   }, msg)));
 };
 
-exports.ModalEmployeeCreated = ModalEmployeeCreated;
+module.exports = ModalEmployeeCreated;
 //# sourceMappingURL=index.js.map
