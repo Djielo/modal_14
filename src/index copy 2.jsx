@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "style-components";
 
-const modalContainer = styled.div`
+const ModalContainer = styled.div `
   position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
 `;
 
-const overlay = styled.div`
+const Overlay = styled.div `
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(49, 49, 49, 0.631);
 `;
 
-const modal = styled.div`
+const Modal = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ const modal = styled.div`
   box-shadow: 0 0 5px 2px rgb(218, 201, 14);
 `;
 
-const modalClose = styled.button`
+const ModalClose = styled.Button `
   padding: 0.3rem 0.5rem;
   border: none;
   border-radius: 5px;
@@ -48,14 +48,14 @@ const modalClose = styled.button`
   cursor: pointer;
 `;
 
-const modalImage = styled.img`
+const ModalImage = styled.img `
   text-align: center;
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
 `;
 
-const modalText = styled.p`
+const ModalText = styled.p `
   text-align: center;
 `;
 
@@ -68,16 +68,14 @@ export const ModalEmployeeCreated = ({image, message}) => {
   }
 
   return (
-    <>
-      <div className={modalContainer} onClick={hide}>
-        <div className={overlay}></div>
-        <div className={modal}>
-          <button className={modalClose}>X</button>
-          <img className={modalImage} src={image} alt="Employee Created" />
-          <p className={modalText}>{msg}</p>
-        </div>
-      </div>
-    </>
+   <ModalContainer onClick={hide}>
+        <Overlay></Overlay>
+        <Modal>
+          <ModalClose>X</ModalClose>
+          <ModalImage src={image} alt="Employee Created" />
+          <ModalText>{msg}</ModalText>
+        </Modal>
+      </ModalContainer>   
   );
 };
 
