@@ -1,5 +1,22 @@
 'use strict';
 
+var Styled = require('style-components');
+
+function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+
+var Styled__default = /*#__PURE__*/_interopDefaultLegacy(Styled);
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+  return Object.freeze(Object.defineProperties(strings, {
+    raw: {
+      value: Object.freeze(raw)
+    }
+  }));
+}
+
 function getDefaultExportFromCjs (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
 }
@@ -2802,6 +2819,13 @@ function requireReact_development () {
 
 var React = /*@__PURE__*/getDefaultExportFromCjs(react.exports);
 
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6;
+Styled__default["default"].div(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  position: fixed;\n  top: 0;\n  width: 100vw;\n  height: 100vh;\n"])));
+Styled__default["default"].div(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background: rgba(49, 49, 49, 0.631);\n"])));
+Styled__default["default"].div(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  position: absolute;\n  top: 40%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 50%;\n  max-width: 300px;\n  height: max-content;\n  min-height: 6rem;\n  font-weight: bold;\n  padding: 0 2rem;\n  border: #ccc solid 1px;\n  border-radius: 5px;\n  background-image: linear-gradient(-25deg, #768e12 0%, #ffffff 100%);\n  box-shadow: 0 0 5px 2px rgb(218, 201, 14);\n"])));
+Styled__default["default"].button(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n  padding: 0.3rem 0.5rem;\n  border: none;\n  border-radius: 5px;\n  position: absolute;\n  top: -0.8rem;\n  right: -0.8rem;\n  background-color: #556611;\n  color: #fff;\n  box-shadow: 0 0 5px 5px #a2b165;\n  cursor: pointer;\n"])));
+Styled__default["default"].img(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n  text-align: center;\n  width: 2rem;\n  height: 2rem;\n  padding: 0.5rem;\n"])));
+Styled__default["default"].p(_templateObject6 || (_templateObject6 = _taggedTemplateLiteral(["\n  text-align: center;\n"])));
 var ModalEmployeeCreated = function ModalEmployeeCreated(_ref) {
   var image = _ref.image,
     message = _ref.message;
@@ -2810,22 +2834,21 @@ var ModalEmployeeCreated = function ModalEmployeeCreated(_ref) {
     msg = "";
   }
   return /*#__PURE__*/React.createElement("div", {
-    className: "jielo_modalContainer",
+    className: "modalContainer",
     onClick: hide
   }, /*#__PURE__*/React.createElement("div", {
-    className: "jielo_overlay"
+    className: "overlay"
   }), /*#__PURE__*/React.createElement("div", {
-    className: "jielo_modal"
+    className: "modal"
   }, /*#__PURE__*/React.createElement("button", {
-    className: "jielo_modalClose"
+    className: "modalClose"
   }, "X"), /*#__PURE__*/React.createElement("img", {
-    className: "jielo_modalImage",
+    className: "modalImage",
     src: image,
     alt: "Employee Created"
   }), /*#__PURE__*/React.createElement("p", {
-    className: "jielo_modalText"
+    className: "modalText"
   }, msg)));
 };
-
 module.exports = ModalEmployeeCreated;
 //# sourceMappingURL=index.js.map
