@@ -1,5 +1,5 @@
 import React from "react";
-import Styled from "style-components";
+import Styled from "styled-components";
 
 const modalContainer = Styled.div`
   position: fixed;
