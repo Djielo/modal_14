@@ -5,7 +5,7 @@ const ModalEmployeeCreated = ({ image, message }) => {
 
   function hide() {
     e.preventDefault();
-    document.querySelector(".modalContainer").remove();  
+    document.querySelector(".modalContainer").style.display = "none";  
   }
 
   return (
