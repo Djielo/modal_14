@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./index.css";
 
 const ModalEmployeeCreated = ({ image, message }) => {
 
-  const refModal = useRef();
+  const refModal = React.useRef();
 
   function hide(e) {
     e.preventDefault();
