@@ -1,21 +1,21 @@
 import React from "react";
-import Styled from "styled-components";
+import styled from "styled-components";
 
-const modalContainer = Styled.div`
+const modalContainer = styled.div`
   position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
 `;
 
-const overlay = Styled.div`
+const overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
   background: rgba(49, 49, 49, 0.631);
 `;
 
-const modal = Styled.div`
+const modal = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@ const modal = Styled.div`
   box-shadow: 0 0 5px 2px rgb(218, 201, 14);
 `;
 
-const modalClose = Styled.button`
+const modalClose = styled.button`
   padding: 0.3rem 0.5rem;
   border: none;
   border-radius: 5px;
@@ -48,14 +48,14 @@ const modalClose = Styled.button`
   cursor: pointer;
 `;
 
-const modalImage = Styled.img`
+const modalImage = styled.img`
   text-align: center;
   width: 2rem;
   height: 2rem;
   padding: 0.5rem;
 `;
 
-const modalText = Styled.p`
+const modalText = styled.p`
   text-align: center;
 `;
 
