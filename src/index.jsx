@@ -3,9 +3,9 @@ import "./index.css";
 
 const ModalEmployeeCreated = ({ image, message }) => {
 
-  function hide() {
-    console.log("hide");
-    // setMessage("");
+  function hide(e) {
+    e.preventDefault();
+    e.target.remove();
   }
 
   return (
