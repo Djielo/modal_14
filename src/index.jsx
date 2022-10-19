@@ -3,15 +3,13 @@ import "./index.css";
 
 const ModalEmployeeCreated = ({ image, message }) => {
 
-  const refModal = React.useRef();
-
-  function hide(e) {
+  function hide() {
     e.preventDefault();
-    refModal.current.remove();  
+    document.querySelector(".modalContainer").remove();  
   }
 
   return (
-    <div ref={refModal} className="modalContainer" onClick={hide}>
+    <div className="modalContainer" onClick={hide}>
       <div className="overlay"></div>
       <div className="modal">
         <button className="modalClose">X</button>
