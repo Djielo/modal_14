@@ -3,8 +3,7 @@ import "./index.css";
 
 const ModalEmployeeCreated = ({ image, message }) => {
 
-  function hide() {
-    e.preventDefault();
+  function hide() {    
     document.querySelector(".modalContainer").style.display = "none";  
   }
 
