@@ -62,7 +62,8 @@ const ModalText = styled.p`
 const ModalEmployeeCreated = ({ image, message, setMessage }) => {
 
   function hide() {
-    setMessage("");
+    console.log("hide");
+    // setMessage("");
   }
 
   return (
