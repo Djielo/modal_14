@@ -1,14 +1,9 @@
 import React from "react";
 import "./index.css";
 
-const ModalEmployeeCreated = ({ image, message }) => {
-
-  function hide() {    
-    document.querySelector(".modalContainer").style.display = "none";  
-  }
-
+const ModalEmployeeCreated = ({ image, message, closeFunction }) => {
   return (
-    <div className="modalContainer" onClick={hide}>
+    <div className="modalContainer" onClick={closeFunction}>
       <div className="overlay"></div>
       <div className="modal">
         <button className="modalClose">X</button>

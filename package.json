@@ -1,6 +1,6 @@
 {
   "name": "@jielo/modal_ocr14",
-  "version": "1.5.11",
+  "version": "1.5.20",
   "description": "modal_ocr14",
   "module": "dist/esm/index.js",
   "main": "dist/cjs/index.js",
