@@ -1,6 +1,14 @@
 import React from "react";
 import "./index.css";
 
+/**
+ * It's a modal 
+ * @param {object} props component's properties
+ * @param {string} props.image image url
+ * @param {string} props.message message to show
+ * @param {Function} props.closeFunction; the function to close the modal
+ * @returns {JSX.Element} A modal component that is being returned in JSX format
+ */
 const ModalEmployeeCreated = ({ image, message, closeFunction }) => {
   return (
     <div className="modalContainer" onClick={closeFunction}>
