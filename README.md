@@ -62,7 +62,7 @@ function App() {
   function removeModal() {
     dispatch(setModalMessage(""));
   }
-  return {message !== "" && <ModalEmployeeCreated message={message} image={Wealth_Health_250} closeFunction={removeModal} />}  
+  return {message !== "" && <ModalEmployeeCreated message={message} image={Image} closeFunction={removeModal} />}  
 }
 
 export default App
