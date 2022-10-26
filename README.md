@@ -31,12 +31,5 @@ You will need to use the following props to modify it:
 - [@Djielo](https://www.github.com/Djielo)
 
 
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-[![Npm package version](https://badgen.net/npm/v/express)](https://npmjs.com/package/express)
-
-
 ## 🛠 Skills
 Javascript, HTML, CSS, React, Redux, Python...
