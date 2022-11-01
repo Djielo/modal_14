@@ -1,6 +1,6 @@
 # @jielo/modal_ocr14
 
-This is a simplified modal for basic usage.
+This is a simplified modal for basic usage created for an Open Class Rooms course project !
 
 
 ## Authors
