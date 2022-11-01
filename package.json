@@ -8,12 +8,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-rollup": "npx rollup -c"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Djielo/modal_14.git"
+  },
   "keywords": [
     "react",
     "modal"
   ],
   "author": "jielo",
-  "license": "FREE",
+  "license": "UNLICENSED",
   "dependencies": {
     "react": "^18.2.0"
   },
